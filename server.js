@@ -8,7 +8,7 @@ require('dotenv').config();
 
 
 // Database connection
-mongoose.connect(mongodb+srv://koushikviswanath0987:6KgNOpg8zRiALd7e@cluster0.liym74v.mongodb.net/?retryWrites=true&w=majority);
+mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
 db.on("error", (err) => console.error(err));
 db.once("open", () => console.log("Connected to Database"));
