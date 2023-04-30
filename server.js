@@ -27,6 +27,15 @@ const adminRouter = require("./routes/admins");
 app.use("/admin", adminRouter);
 
 
-app.listen(process.env.PORT, () => {
+
+
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Server started on http://localhost:${process.env.PORT}`);
 });
+
+// app.get("/", async (req, res) => {    
+//   const doc = await Order.findOne({id:1});
+//   const order= doc.displayorder;
+//   // console.log('return ',order);
+//   res.json({order : order});
+// });
