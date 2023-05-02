@@ -25,3 +25,4 @@ email: koushik123@gmail.com
 password: kou123
 
 This App was built using highly efficient methods and modules. Hope you like it!!
+The server is a bit slow due to free hosting. Please bear with it.
